@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+        function ola()
+        {
+            var msg = document.getElementById("tomate");
+            alert(msg.innerHTML);            
+        }
+
+        function cores()
+        {
+            var brocolis = document.getElementsByClassName("beterraba");
+            brocolis[0].style.color = '#FF0';
+            brocolis[0].style.backgroundColor = 'black';
+            brocolis[1].style.color = 'purple';
+        }
+    </script>
+
+</head>
+<body>
+    <h1 id="tomate">Olá, Clovis.</h1>
+    <button onclick="ola()">Teste</button>
+
+    <p class="beterraba">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Provident iure, consectetur sint, quae deleniti impedit culpa, magnam enim repellendus placeat unde eos assumenda officiis. Esse quod impedit nemo eveniet perspiciatis.</p>
+    <p class="beterraba">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nisi nulla ab tenetur. Incidunt deserunt voluptate in impedit dolores. Culpa delectus tempore quam. Quae odio iure beatae architecto atque autem earum.</p>
+    <button onclick="cores()">Mudar</button>
+</body>
+</html>
